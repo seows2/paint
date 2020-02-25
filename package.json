@@ -1,0 +1,30 @@
+{
+  "name": "paint",
+  "version": "1.0.0",
+  "description": "그림판과 실시간 채팅 서버",
+  "main": "index.js",
+  "repository": "https://github.com/seows2/paint",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/node": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
+    "babelify": "^10.0.0",
+    "del": "^5.1.0",
+    "express": "^4.17.1",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-browserify": "^0.5.1",
+    "gulp-csso": "^4.0.1",
+    "gulp-sass": "^4.0.2",
+    "morgan": "^1.9.1",
+    "node-sass": "^4.13.1",
+    "nodemon": "^2.0.2",
+    "pug": "^2.0.4",
+    "socket.io": "^2.3.0"
+  },
+  "scripts": {
+    "dev:server": "nodemon --exec babel-node src/server --ignore assets/ --ignore src/static",
+    "dev:assets": "gulp"
+  }
+}
